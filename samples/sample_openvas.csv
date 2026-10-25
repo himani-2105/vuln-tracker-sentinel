@@ -1,0 +1,3 @@
+IP,Hostname,Port,Port Protocol,CVSS,Severity,NVT Name,Summary,Solution,CVEs
+192.168.56.101,,80,tcp,7.5,High,Apache HTTP Server Outdated Version,"Apache 2.2.8 is end of life",Upgrade to a supported Apache release,CVE-2017-7679
+192.168.56.101,,3306,tcp,5.0,Medium,MySQL exposed with weak authentication,"Database reachable from network",Restrict access and set strong passwords,

@@ -1,0 +1,4 @@
+IP,Hostname,Port,Port Protocol,CVSS,Severity,NVT Name,Summary,Solution,CVEs
+192.168.56.101,lab-web-01,80,tcp,5.8,Medium,HTTP TRACE method enabled,"The web server answers TRACE requests (synthetic fixture)",Disable TRACE in the web server configuration,
+192.168.56.102,lab-db-01,3306,tcp,5.0,Medium,MySQL exposed with weak authentication,"Database reachable from the lab network (synthetic fixture)",Restrict access and enforce strong credentials,
+192.168.56.104,lab-files-01,445,tcp,8.1,High,SMBv1 enabled,"SMBv1 is enabled (synthetic fixture)",Disable SMBv1 and apply vendor patches,CVE-2017-0144

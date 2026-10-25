@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+venv/
+.venv/
+.env
+tracker.db*
+*.db
+*.db-wal
+*.db-shm
+*.secret
+*.bak-*
+*.backup-*
+*.pre-restore
+.pytest_cache/

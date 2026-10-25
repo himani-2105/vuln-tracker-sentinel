@@ -1,0 +1,15 @@
+<?xml version="1.0"?><!-- SYNTHETIC LAB FIXTURE: invented hosts (192.168.56.0/24), no real scan data. Scores are those printed by the fixture script output. -->
+<nmaprun scanner="nmap" args="nmap -sV --script vuln,vulners 192.168.56.101-104"><scaninfo type="syn" protocol="tcp" services="1-1024"/>
+<host><status state="up"/><address addr="192.168.56.101" addrtype="ipv4"/><hostnames><hostname name="lab-web-01"/></hostnames><ports>
+<port protocol="tcp" portid="21"><state state="open"/><service name="ftp" product="vsftpd" version="2.3.4"/><script id="vulners" output="CVE-2011-2523 10.0 https://vulners.com/cve/CVE-2011-2523"/></port>
+<port protocol="tcp" portid="23"><state state="open"/><service name="telnet"/></port>
+<port protocol="tcp" portid="80"><state state="open"/><service name="http" product="Apache httpd" version="2.2.8"/><script id="vulners" output="CVE-2017-7679 9.8 https://vulners.com/cve/CVE-2017-7679"/></port>
+<port protocol="tcp" portid="445"><state state="open"/><service name="microsoft-ds" product="Samba smbd" version="3.0.20"/></port></ports></host>
+<host><status state="up"/><address addr="192.168.56.102" addrtype="ipv4"/><hostnames><hostname name="lab-db-01"/></hostnames><ports>
+<port protocol="tcp" portid="3306"><state state="open"/><service name="mysql" product="MySQL" version="5.0.51a"/><script id="vulners" output="CVE-2012-2122 5.1 https://vulners.com/cve/CVE-2012-2122"/></port>
+<port protocol="tcp" portid="5432"><state state="open"/><service name="postgresql" product="PostgreSQL" version="8.3"/></port></ports></host>
+<host><status state="up"/><address addr="192.168.56.103" addrtype="ipv4"/><hostnames><hostname name="lab-jump-01"/></hostnames><ports>
+<port protocol="tcp" portid="22"><state state="open"/><service name="ssh" product="OpenSSH" version="7.2p2"/><script id="vulners" output="CVE-2016-6210 5.9 https://vulners.com/cve/CVE-2016-6210"/></port>
+<port protocol="tcp" portid="3389"><state state="open"/><service name="ms-wbt-server"/></port></ports></host>
+<host><status state="up"/><address addr="192.168.56.104" addrtype="ipv4"/><hostnames><hostname name="lab-files-01"/></hostnames><ports>
+<port protocol="tcp" portid="445"><state state="open"/><service name="microsoft-ds" product="Windows 7 SMB"/><script id="vulners" output="CVE-2017-0144 8.1 https://vulners.com/cve/CVE-2017-0144"/></port></ports></host></nmaprun>

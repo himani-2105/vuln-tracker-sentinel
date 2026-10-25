@@ -1,0 +1,5 @@
+flask>=3.0,<4
+werkzeug>=3.0,<4
+gunicorn>=22.0,<27
+defusedxml>=0.7.1,<0.8
+reportlab>=4.0,<5
